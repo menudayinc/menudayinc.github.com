@@ -1,0 +1,17 @@
+.body-bg {
+	background: #2d72d9;
+	filter: alpha(opacity=80);
+}
+
+input,
+textarea,
+#social-toggle,
+#social-links a {
+	background: url(images/transparent.png) repeat;
+}
+
+#social-toggle.ion-ios7-minus-empty,
+#social-toggle:hover,
+#social-links a:hover {
+	background: url(images/transparent_active.png) repeat;
+}
