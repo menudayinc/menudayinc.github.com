@@ -20,7 +20,7 @@
 
 	$(document).ready( function() {
 		var interval = 0;
-		centerVertically();
+		// centerVertically();
 		$(window).bind('resize orientationchange', function(){
 			centerVertically();
 		});
@@ -55,6 +55,7 @@
 	function centerVertically() {
 		var wrap = $('.wrap'),
 			diff = $(window).height() - $('.wrap').prop('scrollHeight');
+			console.log(diff);
 		if ( diff > 84 ) {
 			var margin = Math.floor(diff/2);
 			wrap.css({ marginTop: margin, marginBottom: margin });
